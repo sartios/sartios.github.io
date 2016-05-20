@@ -284,6 +284,25 @@ section.success a.active{
 	color: #2c3e50;
 }
 
+.about-row {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 120px;
+}
+
+.hello-msg {
+    display: block;
+}
+.location {
+    display: block;
+    margin-top: 20px;
+}
+.about-msg {
+    display: block;
+    margin-top: 20px;
+    width: 50%;
+}
+
 /** About end **/
 
 /** Footer start **/
