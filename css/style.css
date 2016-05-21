@@ -74,12 +74,12 @@ section h2{
 
 .navbar .navbar-nav li a:focus{
 	outline: 0;
+	color: #fff;
 }
 
 .navbar .navbar-nav li a{
 	color: #fff;
 }
-
 
 .navbar .navbar-nav li a:hover{
 	color: #18bc9c;
