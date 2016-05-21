@@ -156,6 +156,11 @@ header .intro-text .skills{
 	}
 }
 
+.profile-img{
+	margin-top:10px;
+	border-radius: 20%;
+}
+
 /** Header end **/
 
 /** Stars start **/
