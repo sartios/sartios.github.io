@@ -402,6 +402,11 @@ footer .footer-below{
 	margin: 12px auto;
 	position: relative;
 	z-index:1;
+	border-style: none;
+}
+
+.contact-icons{
+	margin-top: -36px !important;
 }
 
 .mobile-number{
