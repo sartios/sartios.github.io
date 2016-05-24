@@ -40,13 +40,13 @@
 	                    <li class="hidden">
 	                        <a href="#page-top"></a>
 	                    </li>
-	                    <li class="page-scroll">
+	                    <li class="page-scroll portfolio-nav">
 	                        <a href="#portfolio">Portfolio</a>
 	                    </li>
-	                    <li class="page-scroll">
+	                    <li class="page-scroll about-nav">
 	                        <a href="#about">About</a>
 	                    </li>
-	                    <li class="page-scroll">
+	                    <li class="page-scroll contact-nav">
 	                        <a href="#contact">Contact</a>
 	                    </li>
 	                </ul>
@@ -474,6 +474,29 @@
 			        }, 1500, 'easeInOutExpo');
 			        event.preventDefault();
 			    });
+			});
+				var portfolioOff = $('#portfolio').offset();
+				var aboutOff = $('#about').offset();
+				var contactOff = $('#contact').offset();
+			$(window).scroll(function(){
+				var top = $(document).scrollTop();
+				if( (top >= portfolioOff.top) && (top < aboutOff.top)){
+					$('.portfolio-nav').addClass('current');
+					$('.about-nav').removeClass('current');
+					$('.contact-nav').removeClass('current');
+				}else if((top >= aboutOff.top) && (top < contactOff.top)){
+					$('.about-nav').addClass('current');
+					$('.portfolio-nav').removeClass('current');
+					$('.contact-nav').removeClass('current');
+				}else if(top >= contactOff.top){
+					$('.contact-nav').addClass('current');
+					$('.about-nav').removeClass('current');
+					$('.portfolio-nav').removeClass('current');
+				}else{
+					$('.contact-nav').removeClass('current');
+					$('.about-nav').removeClass('current');
+					$('.portfolio-nav').removeClass('current');
+				}
 			});
 		</script>
 		</div>

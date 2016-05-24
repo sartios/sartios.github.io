@@ -85,6 +85,10 @@ section h2{
 	color: #18bc9c;
 }
 
+.navbar .navbar-nav li.current{
+	background-color: #0d0d0d !important;
+}
+
 .navbar-default,
 .navbar-inverse{
 	border: 0;
