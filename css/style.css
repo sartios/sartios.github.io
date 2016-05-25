@@ -325,7 +325,6 @@ section.success a.active{
 .about-row {
     font-size: 1.2em;
     font-weight: 400;
-    padding-left: 120px;
 }
 
 .hello-msg {
@@ -338,7 +337,28 @@ section.success a.active{
 .about-msg {
     display: block;
     margin-top: 20px;
-    width: 50%;
+
+}
+
+@media(min-width: 767px){
+	.about-row {
+	    font-size: 1.2em;
+	    font-weight: 400;
+	    padding-left: 120px;
+	}
+
+	.hello-msg {
+	    display: block;
+	}
+	.location {
+	    display: block;
+	    margin-top: 20px;
+	}
+	.about-msg {
+	    display: block;
+	    margin-top: 20px;
+	    width: 50%;
+	}
 }
 
 /** About end **/
