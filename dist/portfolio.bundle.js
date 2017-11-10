@@ -18280,64 +18280,78 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+__webpack_require__(46);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ContactDetails = function ContactDetails() {
   return _react2.default.createElement(
-    "div",
-    { className: "sa-portfolio-contact-details-container" },
+    'div',
+    { className: 'sa-portfolio-contact-details-container' },
     _react2.default.createElement(
-      "div",
-      null,
-      "Photo"
-    ),
-    _react2.default.createElement(
-      "div",
-      null,
-      "Savramis Sartios"
-    ),
-    _react2.default.createElement(
-      "div",
-      null,
-      "Software Developer"
-    ),
-    _react2.default.createElement(
-      "button",
-      null,
-      "Send Message"
-    ),
-    _react2.default.createElement(
-      "div",
-      null,
+      'div',
+      { className: 'sa-portfolio-general-details' },
       _react2.default.createElement(
-        "div",
-        null,
-        "github icon"
+        'div',
+        { className: 'sa-portfolio-photo' },
+        'Photo'
       ),
       _react2.default.createElement(
-        "div",
+        'div',
+        null,
+        'Savramis Sartios'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'Software Developer'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-buttons-container' },
+      _react2.default.createElement(
+        'button',
+        null,
+        'Send Message'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-main-social' },
+      _react2.default.createElement(
+        'div',
+        null,
+        'github icon'
+      ),
+      _react2.default.createElement(
+        'div',
         null,
         _react2.default.createElement(
-          "div",
+          'div',
           null,
-          "github.com"
+          'github.com'
         ),
         _react2.default.createElement(
-          "div",
+          'div',
           null,
-          "sartios"
+          'sartios'
         )
       )
     ),
     _react2.default.createElement(
-      "div",
+      'ul',
       null,
-      "savramis.sartios@gmail.com"
-    ),
-    _react2.default.createElement(
-      "div",
-      null,
-      "linkedin.com/sartios"
+      _react2.default.createElement(
+        'li',
+        null,
+        'savramis.sartios@gmail.com'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        'linkedin.com/sartios'
+      )
     )
   );
 };
@@ -18371,12 +18385,14 @@ var _workExperience = __webpack_require__(33);
 
 var _workExperience2 = _interopRequireDefault(_workExperience);
 
+__webpack_require__(44);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Overview = function Overview() {
   return _react2.default.createElement(
     'div',
-    null,
+    { className: 'sa-portfolio-overview' },
     _react2.default.createElement(_demoApps2.default, null),
     _react2.default.createElement(_education2.default, null),
     _react2.default.createElement(_workExperience2.default, null)
@@ -18620,6 +18636,20 @@ exports.default = WorkExperienceItem;
 /***/ }),
 /* 41 */,
 /* 42 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 43 */,
+/* 44 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 45 */,
+/* 46 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
