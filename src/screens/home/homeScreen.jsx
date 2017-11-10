@@ -1,13 +1,12 @@
 import React from 'react';
 
 import ContactDetails from './components/contactDetails/contactDetails';
+import Overview from './components/overview/overview';
 
 const HomeScreen = () => (
   <div className="sa-portfolio-home-screen">
     <ContactDetails />
-    <div className="sa-portfolio-home-screen-overview">
-      Portfolio Overview
-    </div>
+    <Overview />
   </div>
 );
 
