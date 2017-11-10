@@ -950,12 +950,20 @@ var _homeScreen = __webpack_require__(27);
 
 var _homeScreen2 = _interopRequireDefault(_homeScreen);
 
+__webpack_require__(42);
+
 __webpack_require__(35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  return _react2.default.createElement(_homeScreen2.default, null);
+  return _react2.default.createElement(
+    'div',
+    {
+      className: 'sa-portfolio-container'
+    },
+    _react2.default.createElement(_homeScreen2.default, null)
+  );
 };
 
 (0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
@@ -18240,12 +18248,16 @@ var _overview = __webpack_require__(29);
 
 var _overview2 = _interopRequireDefault(_overview);
 
+__webpack_require__(40);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var HomeScreen = function HomeScreen() {
   return _react2.default.createElement(
     'div',
-    { className: 'sa-portfolio-home-screen' },
+    {
+      className: 'sa-portfolio-home-screen'
+    },
     _react2.default.createElement(_contactDetails2.default, null),
     _react2.default.createElement(_overview2.default, null)
   );
@@ -18591,6 +18603,23 @@ exports.default = WorkExperienceItem;
 
 /***/ }),
 /* 35 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 41 */,
+/* 42 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
