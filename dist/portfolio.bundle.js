@@ -950,9 +950,9 @@ var _homeScreen = __webpack_require__(27);
 
 var _homeScreen2 = _interopRequireDefault(_homeScreen);
 
-__webpack_require__(38);
+__webpack_require__(45);
 
-__webpack_require__(39);
+__webpack_require__(46);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18248,7 +18248,7 @@ var _overview = __webpack_require__(30);
 
 var _overview2 = _interopRequireDefault(_overview);
 
-__webpack_require__(37);
+__webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18280,6 +18280,10 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _contactButton = __webpack_require__(61);
+
+var _contactButton2 = _interopRequireDefault(_contactButton);
+
 __webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -18310,11 +18314,7 @@ var ContactDetails = function ContactDetails() {
     _react2.default.createElement(
       'div',
       { className: 'sa-portfolio-buttons-container' },
-      _react2.default.createElement(
-        'button',
-        null,
-        'Send Message'
-      )
+      _react2.default.createElement(_contactButton2.default, null)
     ),
     _react2.default.createElement(
       'div',
@@ -18383,15 +18383,15 @@ var _demoApps = __webpack_require__(31);
 
 var _demoApps2 = _interopRequireDefault(_demoApps);
 
-var _education = __webpack_require__(32);
+var _education = __webpack_require__(35);
 
 var _education2 = _interopRequireDefault(_education);
 
-var _workExperience = __webpack_require__(34);
+var _workExperience = __webpack_require__(39);
 
 var _workExperience2 = _interopRequireDefault(_workExperience);
 
-__webpack_require__(36);
+__webpack_require__(43);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18430,11 +18430,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _demoApp = __webpack_require__(52);
+var _demoApp = __webpack_require__(32);
 
 var _demoApp2 = _interopRequireDefault(_demoApp);
 
-__webpack_require__(53);
+__webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18474,235 +18474,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _educationItem = __webpack_require__(33);
-
-var _educationItem2 = _interopRequireDefault(_educationItem);
-
-__webpack_require__(50);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Education = function Education() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'sa-portfolio-education' },
-    _react2.default.createElement(
-      'h3',
-      null,
-      'Education'
-    ),
-    _react2.default.createElement(
-      'ul',
-      { className: 'sa-portfolio-education-items' },
-      _react2.default.createElement(_educationItem2.default, null),
-      _react2.default.createElement(_educationItem2.default, null),
-      _react2.default.createElement(_educationItem2.default, null)
-    )
-  );
-};
-
-exports.default = Education;
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(57);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var EducationItem = function EducationItem() {
-  return _react2.default.createElement(
-    'li',
-    { className: 'sa-portfolio-education-item' },
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-education-item-content' },
-      _react2.default.createElement(
-        'div',
-        null,
-        '2006-2011'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'BSc Informatics & Telecommunications'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'TEI Serron'
-      )
-    )
-  );
-};
-
-exports.default = EducationItem;
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _workExperienceItem = __webpack_require__(35);
-
-var _workExperienceItem2 = _interopRequireDefault(_workExperienceItem);
-
-__webpack_require__(48);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var WorkExperience = function WorkExperience() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'sa-portfolio-work-experience' },
-    _react2.default.createElement(
-      'h3',
-      null,
-      'Work Experience'
-    ),
-    _react2.default.createElement(
-      'ul',
-      { className: 'sa-portfolio-work-items' },
-      _react2.default.createElement(_workExperienceItem2.default, null),
-      _react2.default.createElement(_workExperienceItem2.default, null),
-      _react2.default.createElement(_workExperienceItem2.default, null)
-    )
-  );
-};
-
-exports.default = WorkExperience;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(59);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var WorkExperienceItem = function WorkExperienceItem() {
-  return _react2.default.createElement(
-    'li',
-    { className: 'sa-portfolio-work-item' },
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-work-item-content' },
-      _react2.default.createElement(
-        'div',
-        null,
-        '2006-2011'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'Fullstack Developer'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'Ordereze'
-      )
-    )
-  );
-};
-
-exports.default = WorkExperienceItem;
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 49 */,
-/* 50 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 51 */,
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(55);
+__webpack_require__(33);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18735,28 +18507,296 @@ var DemoApp = function DemoApp() {
 exports.default = DemoApp;
 
 /***/ }),
-/* 53 */
+/* 33 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _educationItem = __webpack_require__(36);
+
+var _educationItem2 = _interopRequireDefault(_educationItem);
+
+__webpack_require__(38);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Education = function Education() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'sa-portfolio-education' },
+    _react2.default.createElement(
+      'h3',
+      null,
+      'Education'
+    ),
+    _react2.default.createElement(
+      'ul',
+      { className: 'sa-portfolio-education-items' },
+      _react2.default.createElement(_educationItem2.default, null),
+      _react2.default.createElement(_educationItem2.default, null),
+      _react2.default.createElement(_educationItem2.default, null)
+    )
+  );
+};
+
+exports.default = Education;
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(37);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EducationItem = function EducationItem() {
+  return _react2.default.createElement(
+    'li',
+    { className: 'sa-portfolio-education-item' },
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-education-item-content' },
+      _react2.default.createElement(
+        'div',
+        null,
+        '2006-2011'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'BSc Informatics & Telecommunications'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'TEI Serron'
+      )
+    )
+  );
+};
+
+exports.default = EducationItem;
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _workExperienceItem = __webpack_require__(40);
+
+var _workExperienceItem2 = _interopRequireDefault(_workExperienceItem);
+
+__webpack_require__(42);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var WorkExperience = function WorkExperience() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'sa-portfolio-work-experience' },
+    _react2.default.createElement(
+      'h3',
+      null,
+      'Work Experience'
+    ),
+    _react2.default.createElement(
+      'ul',
+      { className: 'sa-portfolio-work-items' },
+      _react2.default.createElement(_workExperienceItem2.default, null),
+      _react2.default.createElement(_workExperienceItem2.default, null),
+      _react2.default.createElement(_workExperienceItem2.default, null)
+    )
+  );
+};
+
+exports.default = WorkExperience;
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(41);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var WorkExperienceItem = function WorkExperienceItem() {
+  return _react2.default.createElement(
+    'li',
+    { className: 'sa-portfolio-work-item' },
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-work-item-content' },
+      _react2.default.createElement(
+        'div',
+        null,
+        '2006-2011'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'Fullstack Developer'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'Ordereze'
+      )
+    )
+  );
+};
+
+exports.default = WorkExperienceItem;
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
 /* 54 */,
-/* 55 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 55 */,
 /* 56 */,
-/* 57 */
-/***/ (function(module, exports) {
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(62);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactButton = function ContactButton() {
+  return _react2.default.createElement(
+    'a',
+    { className: 'sa-portfolio-contact-btn', href: '#' },
+    _react2.default.createElement(
+      'span',
+      null,
+      'Contact Me'
+    )
+  );
+};
+
+exports.default = ContactButton;
 
 /***/ }),
-/* 58 */,
-/* 59 */
+/* 62 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

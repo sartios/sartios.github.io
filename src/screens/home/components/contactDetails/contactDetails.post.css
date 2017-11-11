@@ -27,8 +27,9 @@
 
 .sa-portfolio-buttons-container {
   height: 100px;
-  line-height: 100px;
-  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sa-portfolio-main-social {
@@ -45,5 +46,11 @@
 
   .sa-portfolio-general-details {
     height: auto;
+  }
+
+  .sa-portfolio-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

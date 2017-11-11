@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ContactButton from './contactButton/contactButton';
+
 import './contactDetails.post.css';
 
 const ContactDetails = () => (
@@ -12,7 +14,7 @@ const ContactDetails = () => (
       <div>Software Developer</div>
     </div>
     <div className="sa-portfolio-buttons-container">
-      <button>Send Message</button>
+      <ContactButton />
     </div>
     <div className="sa-portfolio-main-social">
       <div>github icon</div>
