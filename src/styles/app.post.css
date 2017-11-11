@@ -1,7 +1,7 @@
 .sa-portfolio-container {
   margin: auto;
   padding: 15px;
-  background-color: lightgrey;
+  background-color: #DBE6EA;
 }
 
 @media only screen and (max-width : 1200px) {

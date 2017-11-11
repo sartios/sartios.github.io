@@ -8,9 +8,13 @@ import './overview.post.css';
 
 const Overview = () => (
   <div className="sa-portfolio-overview">
-    <DemoApps />
-    <Education />
-    <WorkExperience />
+    <div className="sa-portfolio-overview-demos">
+      <DemoApps />
+    </div>
+    <div className="sa-portfolio-overview-details">
+      <WorkExperience />
+      <Education />
+    </div>
   </div>
 );
 

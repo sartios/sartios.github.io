@@ -6,3 +6,8 @@ html, body, button, input, select, textarea {
   color: #3a4250;
   background: whitesmoke;
 }
+
+h3 {
+  border-bottom: 1px solid #9A9B9D;
+  padding-left: 5px;
+}

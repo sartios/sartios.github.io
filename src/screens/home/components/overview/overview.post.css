@@ -1,5 +1,14 @@
 .sa-portfolio-overview {
-  width: 65%;
   background: white;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 10px;
+  margin-right: 100px;
+  margin-left: 20px;
+}
+
+.sa-portfolio-overview-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
 }

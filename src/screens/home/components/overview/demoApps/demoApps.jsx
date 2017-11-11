@@ -1,12 +1,16 @@
 import React from 'react';
 
+import DemoApp from './demoApp/demoApp';
+
+import './demoApps.post.css';
+
 const DemoApps = () => (
-  <div>
+  <div className="sa-portfolio-demo-apps">
     <h3>Demo Apps</h3>
-    <ul>
-      <li>React</li>
-      <li>Analytics</li>
-      <li>API</li>
+    <ul className="sa-portfolio-demo-apps-list">
+      <DemoApp />
+      <DemoApp />
+      <DemoApp />
     </ul>
   </div>
 );

@@ -2,10 +2,12 @@ import React from 'react';
 
 import EducationItem from './educationItem/educationItem';
 
+import './eduction.post.css';
+
 const Education = () => (
-  <div>
+  <div className="sa-portfolio-education">
     <h3>Education</h3>
-    <ul>
+    <ul className="sa-portfolio-education-items">
       <EducationItem />
       <EducationItem />
       <EducationItem />

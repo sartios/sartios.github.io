@@ -2,10 +2,12 @@ import React from 'react';
 
 import WorkExperienceItem from './workExperienceItem/workExperienceItem';
 
+import './workExperience.post.css';
+
 const WorkExperience = () => (
-  <div>
+  <div className="sa-portfolio-work-experience">
     <h3>Work Experience</h3>
-    <ul>
+    <ul className="sa-portfolio-work-items">
       <WorkExperienceItem />
       <WorkExperienceItem />
       <WorkExperienceItem />

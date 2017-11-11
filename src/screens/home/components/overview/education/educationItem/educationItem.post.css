@@ -1,0 +1,22 @@
+.sa-portfolio-education-item {
+  position: relative;
+  border-left: 1px solid #DBE6EA;
+}
+
+.sa-portfolio-education-item::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  top: 6px;
+  left: -3px;
+}
+
+.sa-portfolio-education-item-content {
+  position: relative;
+  padding: 0 10px 10px;
+}

@@ -1,4 +1,4 @@
 .sa-portfolio-home-screen {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
