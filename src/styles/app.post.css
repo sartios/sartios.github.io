@@ -2,6 +2,8 @@
   margin: auto;
   padding: 15px;
   background-color: #DBE6EA;
+  position: relative;
+  width: auto;
 }
 
 @media only screen and (max-width : 1200px) {
@@ -12,7 +14,7 @@
 
 @media only screen and (max-width : 992px) {
  .sa-portfolio-container {
-   max-width: 1195px;
+   max-width: 987px;
  }
 }
 
@@ -24,7 +26,7 @@
 
 @media only screen and (max-width : 480px) {
  .sa-portfolio-container {
-   max-width: 395px;
+   max-width: 475px;
  }
 }
 

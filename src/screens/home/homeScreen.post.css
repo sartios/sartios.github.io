@@ -2,3 +2,9 @@
   display: flex;
   justify-content: flex-start;
 }
+
+@media only screen and (max-width : 768px) {
+  .sa-portfolio-home-screen {
+    flex-direction: column;
+  }
+}

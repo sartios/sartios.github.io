@@ -36,3 +36,14 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media only screen and (max-width : 768px) {
+  .sa-portfolio-contact-details-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sa-portfolio-general-details {
+    height: auto;
+  }
+}
