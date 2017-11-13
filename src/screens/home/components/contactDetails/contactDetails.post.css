@@ -36,6 +36,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 20px;
+  color: #9A9B9D;
+}
+
+.sa-portfolio-github-link a,
+.sa-portfolio-github-link a:link,
+.sa-portfolio-github-link a:hover,
+.sa-portfolio-github-link a:active,
+.sa-portfolio-github-link a:focus {
+  text-decoration: none;
+  text-transform: none;
+  color: #9A9B9D;
+}
+
+.sa-portfolio-secondary-social {
+  font-size: 16px;
+  color: #DBE6EA;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width : 768px) {
