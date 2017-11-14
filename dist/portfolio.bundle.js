@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(15);
-} else {
   module.exports = __webpack_require__(16);
+} else {
+  module.exports = __webpack_require__(17);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -422,30 +422,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 
-var emptyObject = {};
-
-if (process.env.NODE_ENV !== 'production') {
-  Object.freeze(emptyObject);
-}
-
-module.exports = emptyObject;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
 /**
  * Use invariant() to assert state which your program assumes to be true.
  *
@@ -489,6 +465,30 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+
+
+var emptyObject = {};
+
+if (process.env.NODE_ENV !== 'production') {
+  Object.freeze(emptyObject);
+}
+
+module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -575,9 +575,9 @@ module.exports = warning;
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(5);
+  var invariant = __webpack_require__(4);
   var warning = __webpack_require__(6);
-  var ReactPropTypesSecret = __webpack_require__(17);
+  var ReactPropTypesSecret = __webpack_require__(8);
   var loggedTypeFailures = {};
 }
 
@@ -637,6 +637,25 @@ module.exports = checkPropTypes;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  *
  */
 
@@ -667,7 +686,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -748,7 +767,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -790,7 +809,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -861,7 +880,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -904,7 +923,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -934,7 +953,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -950,9 +969,9 @@ var _homeScreen = __webpack_require__(27);
 
 var _homeScreen2 = _interopRequireDefault(_homeScreen);
 
-__webpack_require__(47);
+__webpack_require__(52);
 
-__webpack_require__(48);
+__webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -969,7 +988,7 @@ var App = function App() {
 (0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -981,7 +1000,7 @@ var App = function App() {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var m=__webpack_require__(3),n=__webpack_require__(4),p=__webpack_require__(2);
+var m=__webpack_require__(3),n=__webpack_require__(5),p=__webpack_require__(2);
 function q(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var r={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function t(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}t.prototype.isReactComponent={};t.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?q("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};t.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function u(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}function v(){}v.prototype=t.prototype;var w=u.prototype=new v;w.constructor=u;m(w,t.prototype);w.isPureReactComponent=!0;function x(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}var y=x.prototype=new v;y.constructor=x;m(y,t.prototype);y.unstable_isAsyncReactComponent=!0;y.render=function(){return this.props.children};
@@ -998,7 +1017,7 @@ version:"16.1.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurren
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1018,8 +1037,8 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(3);
-var invariant = __webpack_require__(5);
-var emptyObject = __webpack_require__(4);
+var invariant = __webpack_require__(4);
+var emptyObject = __webpack_require__(5);
 var warning = __webpack_require__(6);
 var emptyFunction = __webpack_require__(2);
 var checkPropTypes = __webpack_require__(7);
@@ -2349,25 +2368,6 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2429,7 +2429,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),m=__webpack_require__(8),A=__webpack_require__(3),B=__webpack_require__(2),ca=__webpack_require__(9),da=__webpack_require__(10),ea=__webpack_require__(11),ha=__webpack_require__(12),ia=__webpack_require__(13),C=__webpack_require__(4);
+var aa=__webpack_require__(0),m=__webpack_require__(9),A=__webpack_require__(3),B=__webpack_require__(2),ca=__webpack_require__(10),da=__webpack_require__(11),ea=__webpack_require__(12),ha=__webpack_require__(13),ia=__webpack_require__(14),C=__webpack_require__(5);
 function D(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:D("227");
 var la={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function qa(a,b){return(a&b)===b}
 var ra={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ra,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){sa.hasOwnProperty(f)?D("48",f):void 0;var g=f.toLowerCase(),k=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:qa(k,b.MUST_USE_PROPERTY),
@@ -2724,17 +2724,17 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var React = __webpack_require__(0);
-var invariant = __webpack_require__(5);
+var invariant = __webpack_require__(4);
 var warning = __webpack_require__(6);
-var ExecutionEnvironment = __webpack_require__(8);
+var ExecutionEnvironment = __webpack_require__(9);
 var _assign = __webpack_require__(3);
 var emptyFunction$1 = __webpack_require__(2);
-var EventListener = __webpack_require__(9);
-var getActiveElement = __webpack_require__(10);
-var shallowEqual = __webpack_require__(11);
-var containsNode = __webpack_require__(12);
-var focusNode = __webpack_require__(13);
-var emptyObject = __webpack_require__(4);
+var EventListener = __webpack_require__(10);
+var getActiveElement = __webpack_require__(11);
+var shallowEqual = __webpack_require__(12);
+var containsNode = __webpack_require__(13);
+var focusNode = __webpack_require__(14);
+var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(7);
 var hyphenateStyleName = __webpack_require__(23);
 var camelizeStyleName = __webpack_require__(25);
@@ -18244,11 +18244,11 @@ var _contactDetails = __webpack_require__(28);
 
 var _contactDetails2 = _interopRequireDefault(_contactDetails);
 
-var _overview = __webpack_require__(32);
+var _overview = __webpack_require__(37);
 
 var _overview2 = _interopRequireDefault(_overview);
 
-__webpack_require__(46);
+__webpack_require__(51);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18284,11 +18284,11 @@ var _contactButton = __webpack_require__(29);
 
 var _contactButton2 = _interopRequireDefault(_contactButton);
 
-var _icon = __webpack_require__(64);
+var _icon = __webpack_require__(31);
 
 var _icon2 = _interopRequireDefault(_icon);
 
-__webpack_require__(31);
+__webpack_require__(36);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18396,411 +18396,6 @@ exports.default = ContactButton;
 
 /***/ }),
 /* 31 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _demoApps = __webpack_require__(33);
-
-var _demoApps2 = _interopRequireDefault(_demoApps);
-
-var _education = __webpack_require__(37);
-
-var _education2 = _interopRequireDefault(_education);
-
-var _workExperience = __webpack_require__(41);
-
-var _workExperience2 = _interopRequireDefault(_workExperience);
-
-__webpack_require__(45);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Overview = function Overview() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'sa-portfolio-overview' },
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-overview-demos' },
-      _react2.default.createElement(_demoApps2.default, null)
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-overview-details' },
-      _react2.default.createElement(_workExperience2.default, null),
-      _react2.default.createElement(_education2.default, null)
-    )
-  );
-};
-
-exports.default = Overview;
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _demoApp = __webpack_require__(34);
-
-var _demoApp2 = _interopRequireDefault(_demoApp);
-
-__webpack_require__(36);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var DemoApps = function DemoApps() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'sa-portfolio-demo-apps' },
-    _react2.default.createElement(
-      'h3',
-      null,
-      'Demo Apps'
-    ),
-    _react2.default.createElement(
-      'ul',
-      { className: 'sa-portfolio-demo-apps-list' },
-      _react2.default.createElement(_demoApp2.default, null),
-      _react2.default.createElement(_demoApp2.default, null),
-      _react2.default.createElement(_demoApp2.default, null)
-    )
-  );
-};
-
-exports.default = DemoApps;
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(35);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var DemoApp = function DemoApp() {
-  return _react2.default.createElement(
-    'li',
-    { className: 'sa-portfolio-demo-app' },
-    _react2.default.createElement(
-      'a',
-      { className: 'sa-portfolio-demo-app-link', href: '#' },
-      'App Logo'
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-demo-app-metadata' },
-      _react2.default.createElement(
-        'span',
-        { className: 'sa-portfolio-demo-app-name' },
-        'App Name'
-      ),
-      _react2.default.createElement(
-        'span',
-        { className: 'sa-portfolio-demo-app-tech' },
-        'React'
-      )
-    )
-  );
-};
-
-exports.default = DemoApp;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _educationItem = __webpack_require__(38);
-
-var _educationItem2 = _interopRequireDefault(_educationItem);
-
-__webpack_require__(40);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Education = function Education() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'sa-portfolio-education' },
-    _react2.default.createElement(
-      'h3',
-      null,
-      'Education'
-    ),
-    _react2.default.createElement(
-      'ul',
-      { className: 'sa-portfolio-education-items' },
-      _react2.default.createElement(_educationItem2.default, null),
-      _react2.default.createElement(_educationItem2.default, null),
-      _react2.default.createElement(_educationItem2.default, null)
-    )
-  );
-};
-
-exports.default = Education;
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(39);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var EducationItem = function EducationItem() {
-  return _react2.default.createElement(
-    'li',
-    { className: 'sa-portfolio-education-item' },
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-education-item-content' },
-      _react2.default.createElement(
-        'div',
-        null,
-        '2006-2011'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'BSc Informatics & Telecommunications'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'TEI Serron'
-      )
-    )
-  );
-};
-
-exports.default = EducationItem;
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _workExperienceItem = __webpack_require__(42);
-
-var _workExperienceItem2 = _interopRequireDefault(_workExperienceItem);
-
-__webpack_require__(44);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var WorkExperience = function WorkExperience() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'sa-portfolio-work-experience' },
-    _react2.default.createElement(
-      'h3',
-      null,
-      'Work Experience'
-    ),
-    _react2.default.createElement(
-      'ul',
-      { className: 'sa-portfolio-work-items' },
-      _react2.default.createElement(_workExperienceItem2.default, null),
-      _react2.default.createElement(_workExperienceItem2.default, null),
-      _react2.default.createElement(_workExperienceItem2.default, null)
-    )
-  );
-};
-
-exports.default = WorkExperience;
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(43);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var WorkExperienceItem = function WorkExperienceItem() {
-  return _react2.default.createElement(
-    'li',
-    { className: 'sa-portfolio-work-item' },
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-work-item-content' },
-      _react2.default.createElement(
-        'div',
-        null,
-        '2006-2011'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'Fullstack Developer'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'Ordereze'
-      )
-    )
-  );
-};
-
-exports.default = WorkExperienceItem;
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18814,11 +18409,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(67);
+var _propTypes = __webpack_require__(32);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-__webpack_require__(65);
+__webpack_require__(35);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18844,14 +18439,7 @@ Icon.propTypes = {
 exports.default = Icon;
 
 /***/ }),
-/* 65 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 66 */,
-/* 67 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -18876,17 +18464,17 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(68)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(33)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(69)();
+  module.exports = __webpack_require__(34)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 68 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18900,11 +18488,11 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 var emptyFunction = __webpack_require__(2);
-var invariant = __webpack_require__(5);
+var invariant = __webpack_require__(4);
 var warning = __webpack_require__(6);
 var assign = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(17);
+var ReactPropTypesSecret = __webpack_require__(8);
 var checkPropTypes = __webpack_require__(7);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
@@ -19436,7 +19024,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 69 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19450,8 +19038,8 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 var emptyFunction = __webpack_require__(2);
-var invariant = __webpack_require__(5);
-var ReactPropTypesSecret = __webpack_require__(17);
+var invariant = __webpack_require__(4);
+var ReactPropTypesSecret = __webpack_require__(8);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -19499,6 +19087,402 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _demoApps = __webpack_require__(38);
+
+var _demoApps2 = _interopRequireDefault(_demoApps);
+
+var _education = __webpack_require__(42);
+
+var _education2 = _interopRequireDefault(_education);
+
+var _workExperience = __webpack_require__(46);
+
+var _workExperience2 = _interopRequireDefault(_workExperience);
+
+__webpack_require__(50);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Overview = function Overview() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'sa-portfolio-overview' },
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-overview-demos' },
+      _react2.default.createElement(_demoApps2.default, null)
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-overview-details' },
+      _react2.default.createElement(_workExperience2.default, null),
+      _react2.default.createElement(_education2.default, null)
+    )
+  );
+};
+
+exports.default = Overview;
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _demoApp = __webpack_require__(39);
+
+var _demoApp2 = _interopRequireDefault(_demoApp);
+
+__webpack_require__(41);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DemoApps = function DemoApps() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'sa-portfolio-demo-apps' },
+    _react2.default.createElement(
+      'h3',
+      null,
+      'Demo Apps'
+    ),
+    _react2.default.createElement(
+      'ul',
+      { className: 'sa-portfolio-demo-apps-list' },
+      _react2.default.createElement(_demoApp2.default, null),
+      _react2.default.createElement(_demoApp2.default, null),
+      _react2.default.createElement(_demoApp2.default, null)
+    )
+  );
+};
+
+exports.default = DemoApps;
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(40);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DemoApp = function DemoApp() {
+  return _react2.default.createElement(
+    'li',
+    { className: 'sa-portfolio-demo-app' },
+    _react2.default.createElement(
+      'a',
+      { className: 'sa-portfolio-demo-app-link', href: '#' },
+      'App Logo'
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-demo-app-metadata' },
+      _react2.default.createElement(
+        'span',
+        { className: 'sa-portfolio-demo-app-name' },
+        'App Name'
+      ),
+      _react2.default.createElement(
+        'span',
+        { className: 'sa-portfolio-demo-app-tech' },
+        'React'
+      )
+    )
+  );
+};
+
+exports.default = DemoApp;
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _educationItem = __webpack_require__(43);
+
+var _educationItem2 = _interopRequireDefault(_educationItem);
+
+__webpack_require__(45);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Education = function Education() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'sa-portfolio-education' },
+    _react2.default.createElement(
+      'h3',
+      null,
+      'Education'
+    ),
+    _react2.default.createElement(
+      'ul',
+      { className: 'sa-portfolio-education-items' },
+      _react2.default.createElement(_educationItem2.default, null),
+      _react2.default.createElement(_educationItem2.default, null),
+      _react2.default.createElement(_educationItem2.default, null)
+    )
+  );
+};
+
+exports.default = Education;
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(44);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EducationItem = function EducationItem() {
+  return _react2.default.createElement(
+    'li',
+    { className: 'sa-portfolio-education-item' },
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-education-item-content' },
+      _react2.default.createElement(
+        'div',
+        null,
+        '2006-2011'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'BSc Informatics & Telecommunications'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'TEI Serron'
+      )
+    )
+  );
+};
+
+exports.default = EducationItem;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _workExperienceItem = __webpack_require__(47);
+
+var _workExperienceItem2 = _interopRequireDefault(_workExperienceItem);
+
+__webpack_require__(49);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var WorkExperience = function WorkExperience() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'sa-portfolio-work-experience' },
+    _react2.default.createElement(
+      'h3',
+      null,
+      'Work Experience'
+    ),
+    _react2.default.createElement(
+      'ul',
+      { className: 'sa-portfolio-work-items' },
+      _react2.default.createElement(_workExperienceItem2.default, null),
+      _react2.default.createElement(_workExperienceItem2.default, null),
+      _react2.default.createElement(_workExperienceItem2.default, null)
+    )
+  );
+};
+
+exports.default = WorkExperience;
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(48);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var WorkExperienceItem = function WorkExperienceItem() {
+  return _react2.default.createElement(
+    'li',
+    { className: 'sa-portfolio-work-item' },
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-work-item-content' },
+      _react2.default.createElement(
+        'div',
+        null,
+        '2006-2011'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'Fullstack Developer'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'Ordereze'
+      )
+    )
+  );
+};
+
+exports.default = WorkExperienceItem;
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
