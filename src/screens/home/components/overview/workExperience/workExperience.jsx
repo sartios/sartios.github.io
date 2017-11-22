@@ -6,11 +6,23 @@ import './workExperience.post.css';
 
 const WorkExperience = () => (
   <div className="sa-portfolio-work-experience">
-    <h3>Work Experience</h3>
+    <span className="sa-portfolio-overview-title">Work Experience</span>
     <ul className="sa-portfolio-work-items">
-      <WorkExperienceItem />
-      <WorkExperienceItem />
-      <WorkExperienceItem />
+      <WorkExperienceItem
+        period="2016-Present"
+        position="Front End Developer"
+        company={{ name: 'Ordereze', link: 'https://www.ordereze.com/' }}
+      />
+      <WorkExperienceItem
+        period="2013-2016"
+        position="Full Stack Developer"
+        company={{ name: 'European Dynamics', link: 'http://www.eurodyn.com/' }}
+      />
+      <WorkExperienceItem
+        period="2011-2012"
+        position="QA Engineer"
+        company={{ name: 'Voyager', link: '' }}
+      />
     </ul>
   </div>
 );

@@ -20,3 +20,21 @@
   position: relative;
   padding: 0 10px 10px;
 }
+
+.sa-portfolio-work-item-company{
+  color: #84CEE0;
+}
+
+.sa-portfolio-work-item-company a {
+  text-decoration: none;
+  color: #84CEE0;
+}
+
+.sa-portfolio-work-item-position {
+  color: grey;
+  font-weight: bold;
+}
+
+.sa-portfolio-work-item-period {
+  color: lightgray;
+}
