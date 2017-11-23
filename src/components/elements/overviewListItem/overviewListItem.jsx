@@ -3,23 +3,23 @@ import PropTypes from 'prop-types';
 
 import Icon from 'components/elements/icon/icon';
 
-import './workExeprience.post.css';
+import './overviewListItem.post.css';
 
-class WorkExperienceItem extends Component {
-  renderCompany() {
-    const { company } = this.props;
+class OverviewListItem extends Component {
+  renderLink() {
+    const { link } = this.props;
 
-    if (company.link) {
+    if (link && link.href) {
       return (
         <div className="sa-portfolio-work-item-company">
-          <a href={`${company.link}`}>{company.name}</a>
+          <a href={`${link.href}`} target="_blank">{link.name}</a>
         </div>
       );
     }
 
     return (
       <div className="sa-portfolio-work-item-company">
-        {company.name}
+        {link.name}
       </div>
     );
   }
@@ -32,9 +32,9 @@ class WorkExperienceItem extends Component {
             {this.props.period}
           </div>
           <div className="sa-portfolio-work-item-position">
-            <Icon name="code" />{this.props.position}
+            <Icon name={this.props.icon} />{this.props.description}
           </div>
-          {this.renderCompany()}
+          {this.renderLink()}
         </div>
       </li>
     );
@@ -43,25 +43,30 @@ class WorkExperienceItem extends Component {
 
 const { object, string } = PropTypes;
 
-WorkExperienceItem.propTypes = {
+OverviewListItem.propTypes = {
   /**
-   * The period of working in that position
+   * The date period of the list item
    */
   period: string,
   /**
-   * The position in the company (Front End Developer || Back End Developer)
+   * The description of the list item
    */
-  position: string,
+  description: string,
   /**
-   * The name and the link of the company
+   * The name of the font awesome icon to be displayed next to description
    */
-  company: object,
+  icon: string,
+  /**
+   * An object containing {link, name}
+   */
+  link: object,
 };
 
-WorkExperienceItem.defaultProps = {
-  period: 'current',
-  position: 'Full Stack Developer',
-  company: {},
+OverviewListItem.defaultProps = {
+  period: '',
+  description: '',
+  icon: '',
+  link: { href: '', name: '' },
 };
 
-export default WorkExperienceItem;
+export default OverviewListItem;
