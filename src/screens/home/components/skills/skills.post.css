@@ -1,0 +1,50 @@
+.sa-portfolio-skills-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 280px;
+  height: 100%;
+  background-color: #3a4250;
+  color: lightgrey;
+}
+
+.sa-portfolio-skills-list-item {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+.sa-portfolio-skills-search-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sa-portfolio-skills-search-icon {
+  width: 20%;
+}
+
+.sa-portfolio-skills-list-item-content {
+  height: 150px;
+}
+
+.sa-portfolio-skills-search-input {
+  width: 80%;
+}
+
+.sa-portfolio-skills-list-item-title {
+  border-bottom: 1px solid lightgrey;
+  text-transform: uppercase;
+}
+
+.sa-portfolio-skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sa-portfolio-misc-skill-icon {
+  color: orange;
+}
+
+.sa-portfolio-skill-icon {
+  color: greenyellow;
+}

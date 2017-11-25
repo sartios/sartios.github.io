@@ -1,6 +1,7 @@
 .sa-portfolio-home-screen {
   display: flex;
   justify-content: flex-start;
+  padding-right: 300px;
 }
 
 @media only screen and (max-width : 768px) {
