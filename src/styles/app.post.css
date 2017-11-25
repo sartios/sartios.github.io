@@ -1,9 +1,15 @@
 .sa-portfolio-container {
-  margin: auto;
-  padding: 15px;
-  background-color: #DBE6EA;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 924px;
+  max-height: 100%;
+  max-width: 100%;
   position: relative;
-  width: auto;
 }
 
 @media only screen and (max-width : 1200px) {

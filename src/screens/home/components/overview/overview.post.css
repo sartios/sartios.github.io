@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   padding: 60px 10px;
-  margin-right: 100px;
   margin-left: 20px;
+  width: 75%;
 }
 
 .sa-portfolio-overview-details {
@@ -15,7 +15,8 @@
 
 @media only screen and (max-width: 768px) {
     .sa-portfolio-overview {
-      width: 100%; box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
       margin-left: 0;
       margin-top: 20px;
     }

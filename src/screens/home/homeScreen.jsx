@@ -10,9 +10,13 @@ const HomeScreen = () => (
   <div
     className="sa-portfolio-home-screen"
   >
-    <ContactDetails />
-    <Overview />
-    <Skills />
+    <div className="sa-portfolio-home-screen-main">
+      <ContactDetails />
+      <Overview />
+    </div>
+    <div className="sa-portfolio-home-screen-side">
+      <Skills />
+    </div>
   </div>);
 
 export default HomeScreen;

@@ -18490,9 +18490,17 @@ var HomeScreen = function HomeScreen() {
     {
       className: 'sa-portfolio-home-screen'
     },
-    _react2.default.createElement(_contactDetails2.default, null),
-    _react2.default.createElement(_overview2.default, null),
-    _react2.default.createElement(_skills2.default, null)
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-home-screen-main' },
+      _react2.default.createElement(_contactDetails2.default, null),
+      _react2.default.createElement(_overview2.default, null)
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-home-screen-side' },
+      _react2.default.createElement(_skills2.default, null)
+    )
   );
 };
 

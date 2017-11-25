@@ -1,7 +1,39 @@
 .sa-portfolio-home-screen {
+  background-color: white;
+  color: rgba(0,0,0,0.87);
   display: flex;
-  justify-content: flex-start;
-  padding-right: 300px;
+  flex: 1;
+  flex-direction: row;
+  min-height: 0;
+}
+
+.sa-portfolio-home-screen-main {
+  background-color: #DBE6EA;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0%;
+  flex: 1;
+  justify-content: space-between;
+  min-width: 0;
+  overflow-x: hidden;
+  padding-top: 100px;
+  padding-right: 20px;
+}
+
+.sa-portfolio-home-screen-side {
+  align-items: stretch;
+  background-color: #3a4250;
+  bottom: 0;
+  box-shadow: none;
+  color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: relative;
+  top: 0;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 300px;
+  z-index: 12;
 }
 
 @media only screen and (max-width : 768px) {
