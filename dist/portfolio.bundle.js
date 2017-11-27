@@ -564,6 +564,41 @@ module.exports = warning;
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+    Symbol.for &&
+    Symbol.for('react.element')) ||
+    0xeac7;
+
+  var isValidElement = function(object) {
+    return typeof object === 'object' &&
+      object !== null &&
+      object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(32)(isValidElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = __webpack_require__(33)();
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -577,7 +612,7 @@ module.exports = warning;
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(4);
   var warning = __webpack_require__(6);
-  var ReactPropTypesSecret = __webpack_require__(8);
+  var ReactPropTypesSecret = __webpack_require__(9);
   var loggedTypeFailures = {};
 }
 
@@ -628,7 +663,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -647,7 +682,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -661,15 +696,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(10);
+var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _classnames = __webpack_require__(70);
+var _classnames = __webpack_require__(36);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(34);
+__webpack_require__(37);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -709,41 +744,6 @@ Icon.defaultProps = {
 };
 
 exports.default = Icon;
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (process.env.NODE_ENV !== 'production') {
-  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-    Symbol.for &&
-    Symbol.for('react.element')) ||
-    0xeac7;
-
-  var isValidElement = function(object) {
-    return typeof object === 'object' &&
-      object !== null &&
-      object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(32)(isValidElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(33)();
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 11 */
@@ -1068,15 +1068,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(10);
+var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _icon = __webpack_require__(9);
+var _icon = __webpack_require__(10);
 
 var _icon2 = _interopRequireDefault(_icon);
 
-__webpack_require__(44);
+__webpack_require__(47);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1197,9 +1197,9 @@ var _homeScreen = __webpack_require__(30);
 
 var _homeScreen2 = _interopRequireDefault(_homeScreen);
 
-__webpack_require__(52);
+__webpack_require__(55);
 
-__webpack_require__(53);
+__webpack_require__(56);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1269,7 +1269,7 @@ var invariant = __webpack_require__(4);
 var emptyObject = __webpack_require__(5);
 var warning = __webpack_require__(6);
 var emptyFunction = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(7);
+var checkPropTypes = __webpack_require__(8);
 
 // TODO: this is special because it gets imported during build.
 
@@ -2963,7 +2963,7 @@ var shallowEqual = __webpack_require__(14);
 var containsNode = __webpack_require__(15);
 var focusNode = __webpack_require__(16);
 var emptyObject = __webpack_require__(5);
-var checkPropTypes = __webpack_require__(7);
+var checkPropTypes = __webpack_require__(8);
 var hyphenateStyleName = __webpack_require__(26);
 var camelizeStyleName = __webpack_require__(28);
 
@@ -18468,19 +18468,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _contactDetails = __webpack_require__(31);
+var _navbar = __webpack_require__(31);
+
+var _navbar2 = _interopRequireDefault(_navbar);
+
+var _contactDetails = __webpack_require__(35);
 
 var _contactDetails2 = _interopRequireDefault(_contactDetails);
 
-var _overview = __webpack_require__(38);
+var _overview = __webpack_require__(41);
 
 var _overview2 = _interopRequireDefault(_overview);
 
-var _skills = __webpack_require__(49);
+var _skills = __webpack_require__(52);
 
 var _skills2 = _interopRequireDefault(_skills);
 
-__webpack_require__(51);
+__webpack_require__(54);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18493,6 +18497,7 @@ var HomeScreen = function HomeScreen() {
     _react2.default.createElement(
       'div',
       { className: 'sa-portfolio-home-screen-main' },
+      _react2.default.createElement(_navbar2.default, null),
       _react2.default.createElement(_contactDetails2.default, null),
       _react2.default.createElement(_overview2.default, null)
     ),
@@ -18521,80 +18526,67 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _icon = __webpack_require__(9);
+var _propTypes = __webpack_require__(7);
 
-var _icon2 = _interopRequireDefault(_icon);
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _contactButton = __webpack_require__(35);
-
-var _contactButton2 = _interopRequireDefault(_contactButton);
-
-__webpack_require__(37);
+__webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ContactDetails = function ContactDetails() {
+/**
+ * Navigation bar widget
+ */
+var Navbar = function Navbar(props) {
   return _react2.default.createElement(
     'div',
-    { className: 'sa-portfolio-contact-details-container' },
+    { className: 'sa-portfolio-navbar' },
     _react2.default.createElement(
       'div',
-      { className: 'sa-portfolio-general-details' },
+      { className: 'sa-portfolio-navbar-home' },
+      _react2.default.createElement('div', { className: 'sa-portfolio-navbar-home-icon' }),
       _react2.default.createElement(
         'div',
-        { className: 'sa-portfolio-photo' },
-        'Photo'
+        { className: 'sa-portfolio-navbar-home-icon-content' },
+        'cv'
       ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'Savramis Sartios'
-      ),
-      _react2.default.createElement(
-        'div',
-        null,
-        'Software Developer'
-      )
+      props.title
     ),
     _react2.default.createElement(
       'div',
-      { className: 'sa-portfolio-buttons-container' },
-      _react2.default.createElement(_contactButton2.default, null)
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'sa-portfolio-main-social' },
-      _react2.default.createElement(_icon2.default, { name: 'github' }),
-      _react2.default.createElement(
-        'div',
-        { className: 'sa-portfolio-github-link' },
-        _react2.default.createElement(
-          'a',
-          { href: 'http://www.github.com/sartios', target: '_blank' },
-          'github.com/sartios'
-        )
-      )
-    ),
-    _react2.default.createElement(
-      'ul',
-      { className: 'sa-portfolio-secondary-social' },
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(_icon2.default, { name: 'envelope-o' }),
-        'savramis.sartios@gmail.com'
-      ),
-      _react2.default.createElement(
-        'li',
-        null,
-        _react2.default.createElement(_icon2.default, { name: 'linkedin' }),
-        'linkedin.com/sartios'
-      )
+      { className: 'sa-portfolio-navbar-items' },
+      props.links.map(function (link) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'sa-portfolio-navbar-item' },
+          link.name
+        );
+      })
     )
   );
 };
 
-exports.default = ContactDetails;
+var string = _propTypes2.default.string,
+    array = _propTypes2.default.array;
+
+
+Navbar.propTypes = {
+  /**
+   * The title to display in naviation bar
+   */
+  title: string,
+  /**
+   * An array of navigation bar links
+   */
+  links: array
+};
+
+Navbar.defaultProps = {
+  title: 'sartios',
+  links: [{ name: 'home', href: '/' }, { name: 'demos', href: '/' }]
+};
+
+exports.default = Navbar;
 
 /***/ }),
 /* 32 */
@@ -18615,8 +18607,8 @@ var invariant = __webpack_require__(4);
 var warning = __webpack_require__(6);
 var assign = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(8);
-var checkPropTypes = __webpack_require__(7);
+var ReactPropTypesSecret = __webpack_require__(9);
+var checkPropTypes = __webpack_require__(8);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -19162,7 +19154,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 var emptyFunction = __webpack_require__(2);
 var invariant = __webpack_require__(4);
-var ReactPropTypesSecret = __webpack_require__(8);
+var ReactPropTypesSecret = __webpack_require__(9);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -19232,29 +19224,135 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(36);
+var _icon = __webpack_require__(10);
+
+var _icon2 = _interopRequireDefault(_icon);
+
+var _contactButton = __webpack_require__(38);
+
+var _contactButton2 = _interopRequireDefault(_contactButton);
+
+__webpack_require__(40);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ContactButton = function ContactButton() {
+var ContactDetails = function ContactDetails() {
   return _react2.default.createElement(
-    'a',
-    { className: 'sa-portfolio-contact-btn', href: '#' },
+    'div',
+    { className: 'sa-portfolio-contact-details-container' },
     _react2.default.createElement(
-      'span',
-      null,
-      'Contact Me'
+      'div',
+      { className: 'sa-portfolio-general-details' },
+      _react2.default.createElement(
+        'div',
+        { className: 'sa-portfolio-photo' },
+        'Photo'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'Savramis Sartios'
+      ),
+      _react2.default.createElement(
+        'div',
+        null,
+        'Software Developer'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-buttons-container' },
+      _react2.default.createElement(_contactButton2.default, null)
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'sa-portfolio-main-social' },
+      _react2.default.createElement(_icon2.default, { name: 'github' }),
+      _react2.default.createElement(
+        'div',
+        { className: 'sa-portfolio-github-link' },
+        _react2.default.createElement(
+          'a',
+          { href: 'http://www.github.com/sartios', target: '_blank' },
+          'github.com/sartios'
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'ul',
+      { className: 'sa-portfolio-secondary-social' },
+      _react2.default.createElement(
+        'li',
+        null,
+        _react2.default.createElement(_icon2.default, { name: 'envelope-o' }),
+        'savramis.sartios@gmail.com'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        _react2.default.createElement(_icon2.default, { name: 'linkedin' }),
+        'linkedin.com/sartios'
+      )
     )
   );
 };
 
-exports.default = ContactButton;
+exports.default = ContactDetails;
 
 /***/ }),
 /* 36 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2016 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg)) {
+				classes.push(classNames.apply(null, arg));
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if (typeof module !== 'undefined' && module.exports) {
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+			return classNames;
+		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {
+		window.classNames = classNames;
+	}
+}());
+
 
 /***/ }),
 /* 37 */
@@ -19277,19 +19375,64 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _demoApps = __webpack_require__(39);
+__webpack_require__(39);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactButton = function ContactButton() {
+  return _react2.default.createElement(
+    'a',
+    { className: 'sa-portfolio-contact-btn', href: '#' },
+    _react2.default.createElement(
+      'span',
+      null,
+      'Contact Me'
+    )
+  );
+};
+
+exports.default = ContactButton;
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _demoApps = __webpack_require__(42);
 
 var _demoApps2 = _interopRequireDefault(_demoApps);
 
-var _education = __webpack_require__(43);
+var _education = __webpack_require__(46);
 
 var _education2 = _interopRequireDefault(_education);
 
-var _workExperience = __webpack_require__(46);
+var _workExperience = __webpack_require__(49);
 
 var _workExperience2 = _interopRequireDefault(_workExperience);
 
-__webpack_require__(48);
+__webpack_require__(51);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19314,7 +19457,7 @@ var Overview = function Overview() {
 exports.default = Overview;
 
 /***/ }),
-/* 39 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19328,11 +19471,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _demoApp = __webpack_require__(40);
+var _demoApp = __webpack_require__(43);
 
 var _demoApp2 = _interopRequireDefault(_demoApp);
 
-__webpack_require__(42);
+__webpack_require__(45);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19358,7 +19501,7 @@ var DemoApps = function DemoApps() {
 exports.default = DemoApps;
 
 /***/ }),
-/* 40 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19372,7 +19515,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(41);
+__webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19405,65 +19548,6 @@ var DemoApp = function DemoApp() {
 exports.default = DemoApp;
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _overviewListItem = __webpack_require__(17);
-
-var _overviewListItem2 = _interopRequireDefault(_overviewListItem);
-
-__webpack_require__(45);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Education = function Education() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'sa-portfolio-education' },
-    _react2.default.createElement(
-      'span',
-      { className: 'sa-portfolio-overview-title' },
-      'Education'
-    ),
-    _react2.default.createElement(
-      'ul',
-      { className: 'sa-portfolio-education-items' },
-      _react2.default.createElement(_overviewListItem2.default, {
-        period: '2006-2011',
-        description: 'BSc Informatics & Telecommunications',
-        icon: 'book',
-        link: { name: 'TEI Serron', href: 'http://informatics.teicm.gr/' }
-      })
-    )
-  );
-};
-
-exports.default = Education;
-
-/***/ }),
 /* 44 */
 /***/ (function(module, exports) {
 
@@ -19494,7 +19578,66 @@ var _overviewListItem = __webpack_require__(17);
 
 var _overviewListItem2 = _interopRequireDefault(_overviewListItem);
 
-__webpack_require__(47);
+__webpack_require__(48);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Education = function Education() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'sa-portfolio-education' },
+    _react2.default.createElement(
+      'span',
+      { className: 'sa-portfolio-overview-title' },
+      'Education'
+    ),
+    _react2.default.createElement(
+      'ul',
+      { className: 'sa-portfolio-education-items' },
+      _react2.default.createElement(_overviewListItem2.default, {
+        period: '2006-2011',
+        description: 'BSc Informatics & Telecommunications',
+        icon: 'book',
+        link: { name: 'TEI Serron', href: 'http://informatics.teicm.gr/' }
+      })
+    )
+  );
+};
+
+exports.default = Education;
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _overviewListItem = __webpack_require__(17);
+
+var _overviewListItem2 = _interopRequireDefault(_overviewListItem);
+
+__webpack_require__(50);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19535,19 +19678,19 @@ var WorkExperience = function WorkExperience() {
 exports.default = WorkExperience;
 
 /***/ }),
-/* 47 */
+/* 50 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 48 */
+/* 51 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 49 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19563,15 +19706,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(10);
+var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _icon = __webpack_require__(9);
+var _icon = __webpack_require__(10);
 
 var _icon2 = _interopRequireDefault(_icon);
 
-__webpack_require__(50);
+__webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19736,99 +19879,28 @@ Skills.defaultProps = {};
 exports.default = Skills;
 
 /***/ }),
-/* 50 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
 /* 53 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 54 */
+/***/ (function(module, exports) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2016 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
+// removed by extract-text-webpack-plugin
 
-(function () {
-	'use strict';
+/***/ }),
+/* 55 */
+/***/ (function(module, exports) {
 
-	var hasOwn = {}.hasOwnProperty;
+// removed by extract-text-webpack-plugin
 
-	function classNames () {
-		var classes = [];
+/***/ }),
+/* 56 */
+/***/ (function(module, exports) {
 
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				classes.push(classNames.apply(null, arg));
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-			return classNames;
-		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {
-		window.classNames = classNames;
-	}
-}());
-
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

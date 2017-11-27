@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Navbar from './components/navbar/navbar';
 import ContactDetails from './components/contactDetails/contactDetails';
 import Overview from './components/overview/overview';
 import Skills from './components/skills/skills';
@@ -11,6 +12,7 @@ const HomeScreen = () => (
     className="sa-portfolio-home-screen"
   >
     <div className="sa-portfolio-home-screen-main">
+      <Navbar />
       <ContactDetails />
       <Overview />
     </div>
