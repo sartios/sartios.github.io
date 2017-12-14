@@ -1,0 +1,17 @@
+html, body, button, input, select, textarea {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  color: #3a4250;
+  background: whitesmoke;
+}
+
+h3 {
+  border-bottom: 1px solid #9A9B9D;
+  padding-left: 5px;
+}
+
+div {
+  cursor: default;
+}

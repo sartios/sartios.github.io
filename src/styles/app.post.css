@@ -1,3 +1,45 @@
-.smt {
-  display: none;
+.sa-portfolio-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 924px;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width : 1200px) {
+ .sa-portfolio-container {
+   max-width: 1195px;
+ }
+}
+
+@media only screen and (max-width : 992px) {
+ .sa-portfolio-container {
+   max-width: 987px;
+   padding-left: 0;
+   padding-right: 0;
+ }
+}
+
+@media only screen and (max-width : 768px) {
+ .sa-portfolio-container {
+   max-width: 763px;
+ }
+}
+
+@media only screen and (max-width : 480px) {
+ .sa-portfolio-container {
+   max-width: 475px;
+ }
+}
+
+@media only screen and (max-width : 320px) {
+ .sa-portfolio-container {
+   max-width: 319px;
+ }
 }

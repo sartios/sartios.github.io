@@ -1,0 +1,16 @@
+.sa-portfolio-work-experience {
+  padding-left: 30px;
+}
+
+.sa-portfolio-work-items {
+  margin-top: 10px;
+}
+
+.sa-portfolio-overview-title {
+  display: block;
+  font-size: 16px;
+  border-bottom: 1px solid #9A9B9D;
+  padding-right: 10px;
+  cursor: default;
+  text-transform: uppercase;
+}
