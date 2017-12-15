@@ -5,12 +5,6 @@ import Icon from 'components/elements/icon/icon';
 
 import './skills.post.css';
 
-/**
-
-* Describe component
-
-*/
-
 class Skills extends Component {
   constructor(props) {
     super(props);
@@ -36,15 +30,15 @@ class Skills extends Component {
             </div>
             <div className="sa-portfolio-skill">
             React
-            <Icon name="check" className="sa-portfolio-skill-icon" />
+              <Icon name="check" className="sa-portfolio-skill-icon" />
             </div>
             <div className="sa-portfolio-skill">
             Redux
-            <Icon name="check" className="sa-portfolio-skill-icon" />
+              <Icon name="check" className="sa-portfolio-skill-icon" />
             </div>
             <div className="sa-portfolio-skill">
             GraphQL
-            <Icon name="check" className="sa-portfolio-skill-icon" />
+              <Icon name="check" className="sa-portfolio-skill-icon" />
             </div>
           </div>
         </div>
@@ -53,15 +47,15 @@ class Skills extends Component {
             <div className="sa-portfolio-skills-list-item-title">back end</div>
             <div className="sa-portfolio-skill">
             Java, JavaScript, C#
-            <Icon name="check" className="sa-portfolio-skill-icon" />
+              <Icon name="check" className="sa-portfolio-skill-icon" />
             </div>
             <div className="sa-portfolio-skill">
             REST
-            <Icon name="check" className="sa-portfolio-skill-icon" />
+              <Icon name="check" className="sa-portfolio-skill-icon" />
             </div>
             <div className="sa-portfolio-skill">
             Serverless
-            <Icon name="check" className="sa-portfolio-skill-icon" />
+              <Icon name="check" className="sa-portfolio-skill-icon" />
             </div>
           </div>
         </div>
@@ -70,15 +64,15 @@ class Skills extends Component {
             <div className="sa-portfolio-skills-list-item-title">miscellaneous</div>
             <div className="sa-portfolio-skill">
             Travelling
-            <Icon name="star" className="sa-portfolio-misc-skill-icon" />
+              <Icon name="star" className="sa-portfolio-misc-skill-icon" />
             </div>
             <div className="sa-portfolio-skill">
             Fitness
-            <Icon name="star" className="sa-portfolio-misc-skill-icon" />
+              <Icon name="star" className="sa-portfolio-misc-skill-icon" />
             </div>
             <div className="sa-portfolio-skill">
             Contributing
-            <Icon name="star" className="sa-portfolio-misc-skill-icon" />
+              <Icon name="star" className="sa-portfolio-misc-skill-icon" />
             </div>
           </div>
         </div>
@@ -86,13 +80,5 @@ class Skills extends Component {
     );
   }
 }
-
-Skills.propTypes = {
-
-};
-
-Skills.defaultProps = {
-
-};
 
 export default Skills;
