@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Icon from 'components/elements/icon/icon';
+import CircularImage from 'components/elements/circularImage';
 import ContactButton from './contactButton/contactButton';
 
 import './contactDetails.post.css';
@@ -8,9 +9,7 @@ import './contactDetails.post.css';
 const ContactDetails = () => (
   <div className="sa-portfolio-contact-details-container">
     <div className="sa-portfolio-general-details">
-      <div className="sa-portfolio-photo">
-        Photo
-      </div>
+      <CircularImage />
       <div>Savramis Sartios</div>
       <div>Software Developer</div>
     </div>
