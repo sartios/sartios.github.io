@@ -1,29 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import { Icon as SemanticIcon } from 'semantic-ui-react';
 
 import './icon.post.css';
 
-const Icon = ({ name, className }) => {
-  const containerClasses = classNames({
-    'sa-portfolio-icon-container': true,
-    [className]: className !== '',
-  });
-
-  return (
-    <span className={containerClasses}>
-      <i className={`fa fa-${name}`} />
-    </span>
-  );
-};
+const Icon = ({ name, className }) => (
+  <Icon name={name} className={className} />
+);
 
 const { string } = PropTypes;
 
 Icon.propTypes = {
   /**
-	 * The fontawesome icon name
+	 * The name of the icon
 	 */
-  name: string.isRequired,
+  name: string,
   /**
    * Injected class name
    */
@@ -31,6 +22,7 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
+  name: '',
   className: '',
 };
 
