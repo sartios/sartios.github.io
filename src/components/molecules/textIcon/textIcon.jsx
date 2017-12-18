@@ -1,33 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cn from 'classnames';
 
 import Icon from 'components/atoms/icon';
 import Text from 'components/atoms/text';
 
-import './textIcon.post.css';
-
 /**
  * Component to display an icon and text
  */
-const TextIcon = (props) => {
-  const classes = cn({
-    'sp-texticon-small': props.size === 'small',
-    'sp-texticon-medium': props.size === 'medium',
-    'sp-texticon-large': props.size === 'large',
-    'sp-color-gray': props.color === 'gray',
-    'sp-color-gray-light': props.color === 'gray-light',
-    'sp-color-black': props.color === 'black',
-    'sp-color-blue': props.color === 'blue',
-  });
-
-  return (
-    <div className={classes}>
-      <Icon name={props.icon} />
-      <Text value={props.text} inline />
-    </div>
-  );
-};
+const TextIcon = props => (
+  <div>
+    <Icon name={props.icon} color={props.color} size={props.size} />
+    <Text value={props.text}color={props.color} size={props.size} inline />
+  </div>
+);
 
 const { string, oneOf } = PropTypes;
 

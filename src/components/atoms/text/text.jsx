@@ -14,6 +14,10 @@ const Text = (props) => {
     'sp-text-small': props.size === 'small',
     'sp-text-medium': props.size === 'medium',
     'sp-text-large': props.size === 'large',
+    'sp-color-gray': props.color === 'gray',
+    'sp-color-gray-light': props.color === 'gray-light',
+    'sp-color-black': props.color === 'black',
+    'sp-color-blue': props.color === 'blue',
   });
 
 
@@ -37,12 +41,17 @@ Text.propTypes = {
    * The size of the text
    */
   size: oneOf(['small', 'medium', 'large', 'inherit']),
+  /**
+   * The color of the icon and text
+   */
+  color: oneOf(['gray', 'gray-light', 'black', 'blue', 'inherit']),
 };
 
 Text.defaultProps = {
   value: '',
   inline: false,
   size: 'inherit',
+  color: 'inherit',
 };
 
 export default Text;

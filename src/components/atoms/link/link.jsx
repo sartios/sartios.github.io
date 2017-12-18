@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import { Icon as SemanticIcon } from 'semantic-ui-react';
-
-import './icon.post.css';
 
 /**
- * Component to display an icon.
+ * Component to display a link
  */
-const Icon = (props) => {
+const Link = (props) => {
   const classes = cn({
     'sp-color-gray': props.color === 'gray',
     'sp-color-gray-light': props.color === 'gray-light',
@@ -20,31 +17,45 @@ const Icon = (props) => {
   });
 
   return (
-    <SemanticIcon name={props.name} className={classes} />
-  );
+    <a
+      className={classes}
+      href={props.link}
+      target={props.target}
+    >{props.text}
+    </a>);
 };
 
 const { string, oneOf } = PropTypes;
 
-Icon.propTypes = {
+Link.propTypes = {
   /**
-	 * The name of the icon
-	 */
-  name: string,
-  /**
-   * The color of the icon
+   * The href link
    */
-  color: oneOf(['gray', 'gray-light', 'black', 'blue', 'inherit']),
+  link: string,
   /**
-   * The size of the icon
+   * The target of the link
+   */
+  target: oneOf(['none', '_blank']),
+  /**
+   * The text of the link
+   */
+  text: string,
+  /**
+   * The size of the text icon
    */
   size: oneOf(['small', 'medium', 'large', 'inherit']),
+  /**
+   * The color of the link
+   */
+  color: oneOf(['gray', 'gray-light', 'black', 'blue', 'inherit']),
 };
 
-Icon.defaultProps = {
-  name: '',
+Link.defaultProps = {
+  link: '#',
+  target: 'none',
+  text: '',
   color: 'inherit',
   size: 'inherit',
 };
 
-export default Icon;
+export default Link;
