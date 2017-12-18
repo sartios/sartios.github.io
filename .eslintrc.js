@@ -14,7 +14,8 @@ module.exports = {
     'import/extensions': 0,
     'react/jsx-no-target-blank': 0,
     'react/forbid-prop-types': 0,
-    'jsx-a11y/anchor-is-valid': 0
+    'jsx-a11y/anchor-is-valid': 0,
+    'no-console': 0
   },
   globals: {
     'React': true,
