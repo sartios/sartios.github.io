@@ -2,6 +2,8 @@ import React from 'react';
 
 import Icon from 'components/atoms/icon';
 import Image from 'components/atoms/image';
+import TextIcon from 'components/molecules/textIcon';
+import IconLink from 'components/molecules/iconLink';
 import ContactButton from './contactButton/contactButton';
 
 import './contactDetails.post.css';
@@ -17,14 +19,19 @@ const ContactDetails = () => (
       <ContactButton />
     </div>
     <div className="sa-portfolio-main-social">
-      <Icon name="github" />
-      <div className="sa-portfolio-github-link">
-        <a href="http://www.github.com/sartios" target="_blank">github.com/sartios</a>
-      </div>
+      <IconLink
+        icon="github"
+        link="http://www.github.com/sartios"
+        text="github.com/sartios"
+      />
     </div>
     <ul className="sa-portfolio-secondary-social">
-      <li><Icon name="envelope-o" />savramis.sartios@gmail.com</li>
-      <li><Icon name="linkedin" />linkedin.com/sartios</li>
+      <li>
+        <TextIcon icon="envelope" text="savramis.sartios@gmail.com" />
+      </li>
+      <li>
+        <TextIcon icon="linkedin" text="linkedin.com/sartios" />
+      </li>
     </ul>
   </div>
 );
