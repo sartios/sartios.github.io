@@ -4,8 +4,11 @@ import { Icon as SemanticIcon } from 'semantic-ui-react';
 
 import './icon.post.css';
 
+/**
+ * Component to display an icon.
+ */
 const Icon = ({ name, className }) => (
-  <Icon name={name} className={className} />
+  <SemanticIcon name={name} className={className} />
 );
 
 const { string } = PropTypes;
