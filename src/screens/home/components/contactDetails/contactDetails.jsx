@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Icon from 'components/elements/icon';
-import Image from 'components/elements/image';
+import Icon from 'components/atoms/icon';
+import Image from 'components/atoms/image';
 import ContactButton from './contactButton/contactButton';
 
 import './contactDetails.post.css';
