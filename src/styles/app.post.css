@@ -43,3 +43,19 @@
    max-width: 319px;
  }
 }
+
+.sp-color-gray-light {
+  color: #DBE6EA;
+}
+
+.sp-color-gray {
+  color: #9A9B9D;
+}
+
+.sp-color-black {
+  color: #3F4548;
+}
+
+.sp-color-blue {
+  color: #84CEE0;
+}

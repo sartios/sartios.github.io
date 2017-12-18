@@ -3,8 +3,8 @@ import { Grid } from 'semantic-ui-react';
 
 import Navbar from './components/navbar/navbar';
 import ContactDetails from './components/contactDetails/contactDetails';
-import Overview from './components/overview/overview';
-import Skills from './components/skills/skills';
+// import Overview from './components/overview/overview';
+// import Skills from './components/skills/skills';
 
 import './homeScreen.post.css';
 
