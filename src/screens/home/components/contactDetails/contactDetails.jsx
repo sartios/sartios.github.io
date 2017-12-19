@@ -10,11 +10,15 @@ import './contactDetails.post.css';
 
 const ContactDetails = () => (
   <div className="sa-portfolio-contact-details-container">
-    <Image circular />
-    <Text value="Sartios" size="large" />
-    <Text value="Software Developer" size="large" />
-    <Button icon="comment" content="Contact Me" />
-    <GithubInfo />
+    <div className="sa-portfolio-contact-details-container-item-1">
+      <Image circular />
+      <Text value="Sartios" size="large" />
+      <Text value="Software Developer" size="large" />
+    </div>
+    <div className="sa-portfolio-contact-details-container-item-2">
+      <Button icon="comment" content="Contact Me" />
+      <GithubInfo className="sp-portfolio-contact-details-github" />
+    </div>
     <ContactInfo />
   </div>
 );

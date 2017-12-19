@@ -10,6 +10,7 @@ import Link from 'components/atoms/link';
  */
 const IconLink = (props) => {
   const classes = cn({
+    [props.className]: props.className,
     'sp-size-small': props.size === 'small',
     'sp-size-medium': props.size === 'medium',
     'sp-size-large': props.size === 'large',
@@ -53,6 +54,10 @@ IconLink.propTypes = {
    */
   text: string,
   /**
+   * Additional classes
+   */
+  className: string,
+  /**
    * The size of the component
    */
   size: oneOf(['small', 'medium', 'large', 'inherit']),
@@ -74,6 +79,7 @@ IconLink.defaultProps = {
   iconColor: 'gray',
   linkColor: 'blue',
   size: 'medium',
+  className: null,
 };
 
 export default IconLink;
