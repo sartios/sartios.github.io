@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from 'components/atoms/image';
 import Text from 'components/atoms/text';
-import ContactButton from './contactButton/contactButton';
+import Button from 'components/atoms/button';
 import ContactInfo from './contactInfo';
 import GithubInfo from './githubInfo';
 
@@ -13,7 +13,7 @@ const ContactDetails = () => (
     <Image circular />
     <Text value="Sartios" size="large" />
     <Text value="Software Developer" size="large" />
-    <ContactButton />
+    <Button icon="comment" content="Contact Me" />
     <GithubInfo />
     <ContactInfo />
   </div>
