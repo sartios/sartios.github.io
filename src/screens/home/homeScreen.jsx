@@ -4,7 +4,7 @@ import { Grid } from 'semantic-ui-react';
 import Navbar from './components/navbar/navbar';
 import ContactDetails from './components/contactDetails/contactDetails';
 import Overview from './components/overview/overview';
-// import Skills from './components/skills/skills';
+import Skills from './components/skills/skills';
 
 import './homeScreen.post.css';
 
@@ -15,7 +15,6 @@ const HomeScreen = () => (
         <Navbar />
       </Grid.Column>
     </Grid.Row>
-
     <Grid.Row className="sp-home-main-row">
       <Grid.Column computer={3} mobile={16} tablet={16}>
         <ContactDetails />
@@ -23,10 +22,8 @@ const HomeScreen = () => (
       <Grid.Column computer={10} mobile={16} tablet={16}>
         <Overview />
       </Grid.Column>
-      <Grid.Column computer={3} mobile={16} tablet={16}>
-    Skills
-      </Grid.Column>
     </Grid.Row>
+    <Skills />
   </Grid>
 );
 

@@ -5,7 +5,6 @@
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 1;
-  font-family: Lato, "Helvetica Neue", sans-serif;
   height: 924px;
   max-height: 100%;
   max-width: 100%;
@@ -58,6 +57,14 @@
 
 .sp-color-blue {
   color: #84CEE0;
+}
+
+.sp-color-orange {
+  color: orange;
+}
+
+.sp-color-green-light {
+  color: lightgreen;
 }
 
 .sp-size-small {

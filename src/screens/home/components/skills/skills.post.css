@@ -1,3 +1,13 @@
+.sa-portfolio-skills-container {
+  background-color:#3F4548;
+  color: lightgrey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  z-index: 10;
+  height: 1024px;
+}
 .sa-portfolio-skills-list-item {
   padding-left: 20px;
   padding-top: 10px;
@@ -32,12 +42,4 @@
 .sa-portfolio-skill {
   display: flex;
   justify-content: space-between;
-}
-
-.sa-portfolio-misc-skill-icon {
-  color: orange;
-}
-
-.sa-portfolio-skill-icon {
-  color: greenyellow;
 }

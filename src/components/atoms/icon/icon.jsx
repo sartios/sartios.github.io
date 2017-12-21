@@ -14,6 +14,8 @@ const Icon = (props) => {
     'sp-color-gray-light': props.color === 'gray-light',
     'sp-color-black': props.color === 'black',
     'sp-color-blue': props.color === 'blue',
+    'sp-color-orange': props.color === 'orange',
+    'sp-color-green-light': props.color === 'green-light',
     'sp-size-small': props.size === 'small',
     'sp-size-medium': props.size === 'medium',
     'sp-size-large': props.size === 'large',
@@ -34,7 +36,7 @@ Icon.propTypes = {
   /**
    * The color of the icon
    */
-  color: oneOf(['gray', 'gray-light', 'black', 'blue', 'inherit']),
+  color: oneOf(['gray', 'gray-light', 'black', 'blue', 'orange', 'green-light', 'inherit']),
   /**
    * The size of the icon
    */
