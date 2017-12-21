@@ -1,14 +1,18 @@
 import React from 'react';
 
-import OverviewListItem from 'components/elements/overviewListItem/overviewListItem';
+import IconHeader from 'components/molecules/iconHeader';
 
 import './eduction.post.css';
 
 const Education = () => (
   <div className="sa-portfolio-education">
-    <span className="sa-portfolio-overview-title">Education</span>
+    <IconHeader
+      content="Education"
+      icon="book"
+      headerSize="h4"
+    />
     <ul className="sa-portfolio-education-items">
-      <OverviewListItem
+      <div
         period="2006-2011"
         description="BSc Informatics & Telecommunications"
         icon="book"
