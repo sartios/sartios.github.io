@@ -1,37 +1,52 @@
 import React from 'react';
 
+import Card from 'components/molecules/card';
 import IconHeader from 'components/molecules/iconHeader';
+import WorkItem from './workItem';
 
 import './workExperience.post.css';
 
-const WorkExperience = () => (
-  <div className="sa-portfolio-work-experience">
-    <IconHeader
-      content="Working Experience"
-      icon="cloud"
-      headerSize="h4"
-    />
-    <ul className="sa-portfolio-work-items">
-      <div
-        period="2016-Present"
-        description="Front End Developer"
-        icon="code"
-        link={{ name: 'Ordereze', href: 'https://www.ordereze.com/' }}
+const WorkExperience = () => {
+  const ordereze = (<WorkItem
+    jobTitle="Front End Developer"
+    period="2017 - Present"
+    company={{
+    website: 'https://www.ordereze.com/',
+    name: 'Ordereze',
+  }}
+  />);
+
+  const eurodyn = (<WorkItem
+    jobTitle="Full Stack Developer"
+    period="2013 - 2017"
+    company={{
+    website: 'http://www.eurodyn.com/',
+    name: 'European Dynamics',
+  }}
+  />);
+
+  const voyager = (<WorkItem
+    jobTitle="QA Engineer"
+    period="2011 - 2012"
+    company={{
+    name: 'Voyager',
+  }}
+  />);
+
+  return (
+    <div className="sa-portfolio-work-experience">
+      <IconHeader
+        content="Working Experience"
+        icon="cloud"
+        headerSize="h4"
       />
-      <div
-        period="2013-2016"
-        description="Full Stack Developer"
-        icon="code"
-        link={{ name: 'European Dynamics', href: 'http://www.eurodyn.com/' }}
-      />
-      <div
-        period="2011-2012"
-        description="QA Engineer"
-        icon="code"
-        link={{ name: 'Voyager', href: '' }}
-      />
-    </ul>
-  </div>
-);
+      <div>
+        <Card content={ordereze} />
+        <Card content={eurodyn} />
+        <Card content={voyager} />
+      </div>
+    </div>
+  );
+};
 
 export default WorkExperience;

@@ -1,25 +1,31 @@
 import React from 'react';
 
 import IconHeader from 'components/molecules/iconHeader';
+import Card from 'components/molecules/card';
+import EducationItem from './educationItem';
 
 import './eduction.post.css';
 
-const Education = () => (
-  <div className="sa-portfolio-education">
-    <IconHeader
-      content="Education"
-      icon="book"
-      headerSize="h4"
-    />
-    <ul className="sa-portfolio-education-items">
-      <div
-        period="2006-2011"
-        description="BSc Informatics & Telecommunications"
+const Education = () => {
+  const bsc = (<EducationItem
+    educationTitle="BSc. Informatics & Telecommunications"
+    period="2006 - 2011"
+    institute={{
+      website: 'http://informatics.teicm.gr/',
+      name: 'TEI Serron',
+    }}
+  />);
+
+  return (
+    <div className="sa-portfolio-education">
+      <IconHeader
+        content="Education"
         icon="book"
-        link={{ name: 'TEI Serron', href: 'http://informatics.teicm.gr/' }}
+        headerSize="h4"
       />
-    </ul>
-  </div>
-);
+      <Card content={bsc} />
+    </div>
+  );
+};
 
 export default Education;
