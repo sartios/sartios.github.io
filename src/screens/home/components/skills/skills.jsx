@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Input } from 'semantic-ui-react';
 
 import Icon from 'components/atoms/icon/icon';
 
@@ -17,8 +18,7 @@ class Skills extends Component {
       <div className="sa-portfolio-skills-container">
         <div className="sa-portfolio-skills-list-item">
           <div className="sa-portfolio-skills-search-bar">
-            <div className="sa-portfolio-skills-search-icon">icon</div>
-            <div className="sa-portfolio-skills-search-input">input</div>
+            <Input icon="search" placeholder="Search..." transparent inverted />
           </div>
         </div>
         <div className="sa-portfolio-skills-list-item">
