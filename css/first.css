@@ -1,0 +1,57 @@
+.home{
+	height: 500px;
+	text-align: center;
+	background: linear-gradient(to bottom right, LightGrey, white );
+}
+
+.home p, .about p, .about-header{
+	color: DodgerBlue;
+}
+
+.hello-msg{
+	margin-top: 50px;
+}
+
+.tagline{
+	margin-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.portfolio{
+	height: 500px;
+	background: linear-gradient(to bottom right, DodgerBlue, white );
+}
+
+.about{
+	height: 500px;
+	text-align: center;
+	background: linear-gradient(to bottom right, LightGrey, white );
+}
+
+.contact{
+	height: 200px;
+	background: linear-gradient(to bottom right, DodgerBlue, white );
+}
+
+.header{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Times New Roman", Times, serif;
+	font-style: bold;
+}
+
+.location{
+	margin-top: 50px;
+}
+
+.about-msg{
+	margin-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.container-fluid{
+	margin-left: 100px;
+	margin-right: 100px;
+}
