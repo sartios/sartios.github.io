@@ -1,0 +1,23 @@
+.sa-portfolio-overview {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 10px;
+  margin-left: 20px;
+  width: 75%;
+}
+
+.sa-portfolio-overview-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sa-portfolio-overview {
+      box-sizing: border-box;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+}

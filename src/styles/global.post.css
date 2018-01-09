@@ -1,0 +1,20 @@
+html, body, button, input, select, textarea {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Lato, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #3a4250;
+  background: whitesmoke;
+}
+
+.ui.header {
+  color: #3a4250;
+}
+
+.ui.celled.grid {
+  margin: 0;
+}
+
+div {
+  cursor: default;
+}

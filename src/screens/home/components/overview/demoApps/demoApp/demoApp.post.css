@@ -1,0 +1,31 @@
+.sa-portfolio-demo-app {
+
+}
+
+.sa-portfolio-demo-app-link {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid lightgrey;
+  text-decoration: none;
+  color: #3F4548;
+  text-align: center;
+  vertical-align: center;
+}
+
+.sa-portfolio-demo-app-metadata {
+  margin-top: 10px;
+}
+
+.sa-portfolio-demo-app-name {
+  display: block;
+  font-weight: bold;
+  cursor: default;
+}
+
+.sa-portfolio-demo-app-tech {
+  display: block;
+  color: #9A9B9D;
+  cursor: default;
+}
