@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Icon from 'components/elements/icon/icon';
+import Icon from 'components/atoms/icon/icon';
 
 import './overviewListItem.post.css';
 

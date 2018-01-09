@@ -1,21 +1,31 @@
 import React from 'react';
 
-import OverviewListItem from 'components/elements/overviewListItem/overviewListItem';
+import IconHeader from 'components/molecules/iconHeader';
+import Card from 'components/molecules/card';
+import EducationItem from './educationItem';
 
 import './eduction.post.css';
 
-const Education = () => (
-  <div className="sa-portfolio-education">
-    <span className="sa-portfolio-overview-title">Education</span>
-    <ul className="sa-portfolio-education-items">
-      <OverviewListItem
-        period="2006-2011"
-        description="BSc Informatics & Telecommunications"
+const Education = () => {
+  const bsc = (<EducationItem
+    educationTitle="BSc. Informatics & Telecommunications"
+    period="2006 - 2011"
+    institute={{
+      website: 'http://informatics.teicm.gr/',
+      name: 'TEI Serron',
+    }}
+  />);
+
+  return (
+    <div className="sa-portfolio-education">
+      <IconHeader
+        content="Education"
         icon="book"
-        link={{ name: 'TEI Serron', href: 'http://informatics.teicm.gr/' }}
+        headerSize="h4"
       />
-    </ul>
-  </div>
-);
+      <Card content={bsc} />
+    </div>
+  );
+};
 
 export default Education;

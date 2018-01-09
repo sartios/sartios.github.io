@@ -14,7 +14,16 @@ const Navbar = props => (
       {props.title}
     </div>
     <div className="sa-portfolio-navbar-items" >
-      {props.links.map(link => <div className="sa-portfolio-navbar-item">{link.name}</div>)}
+      {props.links.map((link, index) => {
+        const key = `l-${index}`;
+        return (
+          <div
+            key={key}
+            className="sa-portfolio-navbar-item"
+          >
+            {link.name}
+          </div>);
+      })}
     </div>
   </div>
 );
