@@ -1,23 +1,32 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import IconHeader from 'components/molecules/iconHeader';
 import DemoApp from './demoApp/demoApp';
 
-import './demoApps.post.css';
+const DemoApps = () => {
+  const DemoAppsList = styled.ul`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 30px;
+  `;
 
-const DemoApps = () => (
-  <div className="sa-portfolio-demo-apps">
-    <IconHeader
-      content="Demo Apps"
-      icon="game"
-      headerSize="h4"
-    />
-    <ul className="sa-portfolio-demo-apps-list">
-      <DemoApp />
-      <DemoApp />
-      <DemoApp />
-    </ul>
-  </div>
-);
+  return (
+    <div className="sa-portfolio-demo-apps">
+      <IconHeader
+        content="Demo Apps"
+        icon="game"
+        headerSize="h4"
+      />
+      <DemoAppsList>
+        <DemoApp />
+        <DemoApp />
+        <DemoApp />
+      </DemoAppsList>
+    </div>
+  );
+};
 
 export default DemoApps;
