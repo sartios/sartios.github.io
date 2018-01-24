@@ -4,8 +4,6 @@ import Card from 'components/molecules/card';
 import IconHeader from 'components/molecules/iconHeader';
 import WorkItem from './workItem';
 
-import './workExperience.post.css';
-
 const WorkExperience = () => {
   const ordereze = (<WorkItem
     jobTitle="Front End Developer"

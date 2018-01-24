@@ -4,8 +4,6 @@ import IconHeader from 'components/molecules/iconHeader';
 import Card from 'components/molecules/card';
 import EducationItem from './educationItem';
 
-import './eduction.post.css';
-
 const Education = () => {
   const bsc = (<EducationItem
     educationTitle="BSc. Informatics & Telecommunications"
